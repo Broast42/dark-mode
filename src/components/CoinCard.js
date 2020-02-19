@@ -1,4 +1,5 @@
 import React from 'react';
+import CoinData from './CoinData';
 
 const CoinCard = props => {
     return(
@@ -8,34 +9,14 @@ const CoinCard = props => {
                 <img src={props.coinData.image} alt={props.coinData.id} />
                 <h4>{props.coinData.symbol}</h4>
             </div>
-            <div className="flexData">
-                <h6>Market Cap Rank:</h6>
-                <p>{props.coinData.market_cap_rank}</p>
-            </div> 
-            <div className="flexData">
-                <h6>Market Cap:</h6>
-                <p>{props.coinData.market_cap}</p>
-            </div> 
-            <div className="flexData">
-                <h6>Total Volume:</h6>
-                <p>{props.coinData.total_volume}</p>
-            </div> 
-            <div className="flexData">
-                <h6>24 Hour High:</h6>
-                <p>{props.coinData.high_24h}</p>
-            </div>
-            <div className="flexData">
-                <h6>24 Hour Low</h6>
-                <p>{props.coinData.low_24h}</p>
-            </div>
-            <div className="flexData">
-                <h6>Circulating Supply:</h6>
-                <p>{props.coinData.circulating_supply}</p>
-            </div>
-            <div className="flexData">
-                <h6>Total Supply</h6>
-                <p>{props.coinData.total_supply}</p>
-            </div>    
+            <CoinData lable="Market Cap Rank:" data={props.coinData.market_cap_rank} />
+            <CoinData lable="Market Cap:" data={props.coinData.market_cap} />
+            <CoinData lable="Total Volume:" data={props.coinData.total_volume} /> 
+            <CoinData lable="24 Hour High:" data={props.coinData.high_24h} />
+            <CoinData lable="24 Hour Low" data={props.coinData.low_24h} />
+            <CoinData lable="Circulating:" data={props.coinData.circulating_supply} />
+            <CoinData lable="Total Supply" data={props.coinData.total_supply} />
+  
         </div>
     );
 };
