@@ -242,6 +242,37 @@ text-align: left;
   width: 50px;
 }
 
+.coinListFlex{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.coinCard{
+  width: 180px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px grey;
+
+  img{
+    width: 100px;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .flexData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .dark-mode {
   color: #fff;
   background-color: #313843;
@@ -250,4 +281,21 @@ text-align: left;
     background-color: #1F2022;
     border: none;
   }
+}
+
+.flexNav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a{
+    text-decoration: none;
+    color: dodgerblue;
+  }
+
+  .active{
+    color: red;
+  }
+
 }
