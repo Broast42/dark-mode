@@ -152,6 +152,14 @@ h4 {
   font-size: 1.4rem;
 }
 
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
 img {
   height: auto;
   width: 100%;
@@ -242,6 +250,37 @@ text-align: left;
   width: 50px;
 }
 
+.coinListFlex{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.coinCard{
+  width: 180px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px grey;
+
+  img{
+    width: 100px;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .flexData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .dark-mode {
   color: #fff;
   background-color: #313843;
@@ -250,4 +289,25 @@ text-align: left;
     background-color: #1F2022;
     border: none;
   }
+
+  .coinCard{
+    background-color: #1F2022;
+  }
+}
+
+.flexNav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a{
+    text-decoration: none;
+    color: dodgerblue;
+  }
+
+  .active{
+    color: red;
+  }
+
 }
